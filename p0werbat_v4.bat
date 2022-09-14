@@ -29,15 +29,6 @@ set cod86=chcp 866>nul
 set cod12=chcp 1251>nul
 mkdir %cd%\bin\logs
 
-:st
-set /p "pass=>"
-if "%pass%"=="2140" (call :general) 
-else (echo password invalid& >nul pause& goto :st )
-
-rem call :general
-
-exit /b
-
 :general
 echo run auto mode?
 choice /c yn /t 10 /d y /m "default - Yes!"
