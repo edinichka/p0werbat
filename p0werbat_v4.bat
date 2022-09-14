@@ -52,10 +52,10 @@ ECHO ============= p0werbat =============
 ECHO -------------------------------------
 ECHO 1.  AUTOMODE
 ECHO 2.  SCREENSHOTS
-ECHO 3.  ANYDESK
-ECHO 4.  TEAM VIEWER
+ECHO 3.  - ANYDESK
+ECHO 4.  - TEAM VIEWER
 ECHO 5.  SOFTWARE
-ECHO 6.  STOP SERVICES
+ECHO 6.  - STOP SERVICES
 ECHO 7.  WLAN
 ECHO -------------------------------------
 ECHO 8.  CREATE SHORTCUT
@@ -286,12 +286,12 @@ ECHO ============= SOFTWARE =============
 ECHO -------------------------------------
 ECHO 1.  AIDA64
 ECHO 2.  MAS Activator
-ECHO 3.  VICTORIA HDD
-ECHO 4.  STOP_UPDATES_10
-ECHO 5.  WIN_10_TWEAKER
-ECHO 6.  CPU-Z
+ECHO 3.  - VICTORIA HDD
+ECHO 4.  - STOP_UPDATES_10
+ECHO 5.  - WIN_10_TWEAKER
+ECHO 6.  - CPU-Z
 ECHO 7.  Media Creation Tool
-ECHO 8.  Process Hacker
+ECHO 8.  - Process Hacker
 ECHO -------------------------------------
 ECHO 9.  YOUTUBE
 ECHO -------------------------------------
@@ -517,9 +517,6 @@ call :mmenu
 exit /b
 
 :mct
-bitsadmin /transfer MediaCreationTool /download /priority high http://134.249.138.226/files/mct.exe "%cd%\bin\mct.exe"
-timeout /t 5 /nobreak 
-%cd%\bin\mct.exe -y -gm2 -InstallPath="%cd%\bin\
 start %cd%\bin\mct\mct.bat
 timeout /t 5 /nobreak
 call :mmenu
